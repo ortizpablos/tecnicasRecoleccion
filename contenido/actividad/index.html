@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OA Técnicas de recolección de datos - Cuestionario</title>
+  <link rel="stylesheet" href="js/toogle/css/toggles.css">
+  <link rel="stylesheet" href="js/toogle/css/themes/toggles-light.css">
+  <link rel="stylesheet" href="css/cuestionario.css">
+</head>
+<body>
+
+  <div class="encabezado container">
+    <div class="encabezado__titulo">
+      <h1>ACTIVIDAD DIDÁCTICA</h1>
+    </div>
+    <div class="encabezado__audio">
+        <span>¿Audio?</span>
+       <div class="toogle-container">
+          <div class="toggle toggle-light"></div>
+        </div>
+    </div>
+  </div>
+
+  <div id="contenedor" class="box_round">
+
+    <div id="personaje" class="default"></div>
+
+    <div id='preguntas'><!-- div preguntas -->
+
+      <!--  cuestionario -->
+
+      <div id='p1' class="opcion"><!-- p1 -->
+        <div class='wrap'>
+
+          <div class='question'>
+            <p>Es la mínima unidad semántica que corresponde a los elementos primarios de la información y que por sí solos son irrelevantes en la toma de decisiones. </p>
+          </div>
+
+          <div class='opciones'>
+            <div data-preg='p1' data-valor='false' class='respuesta'>
+              <p> <span>A.</span> Información.</p>
+            </div>
+            <div data-preg='p1' data-valor='false' class='respuesta'>
+              <p> <span>B.</span> Conocimiento.</p>
+            </div>
+            <div data-preg='p1' data-valor='true' class='respuesta'>
+              <p> <span>C.</span> Dato.</p>
+            </div>
+            <div data-preg='p1' data-valor='false' class='respuesta'>
+              <p> <span>D.</span> Cuestionario.</p>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /p1 -->
+
+
+      <div id='p2' class="opcion"><!-- p2 -->
+        <div class='wrap'>
+          <div class='question'><p> La observación es un método discreto por que:</p></div>
+          <div class='opciones'>
+            <div data-preg='p2' data-valor='true' class='respuesta'><p> <span>A.</span> Con la observación se pueden apreciar detalles del comportamiento humano, de los documentos y del entorno físico en general.</p></div>
+            <div data-preg='p2' data-valor='false' class='respuesta'><p> <span>B.</span> Con la observación no se pueden apreciar detalles del comportamiento humano, de los documentos y del entorno físico en general.</p></div>
+            <div data-preg='p2' data-valor='false' class='respuesta'><p> <span>C.</span> Con la observación no se pueden apreciar detalles del sistema software.</p></div>
+            <div data-preg='p2' data-valor='false' class='respuesta'><p> <span>D.</span> Con la observación se mira las actividades de la empresa.</p></div>
+          </div>
+        </div>
+      </div><!-- /p2 -->
+
+      <div id='p3' class="opcion"><!-- p3 -->
+        <div class='wrap'>
+          <div class='question'><p> Cuando se requiera obtener una información de manera rápida con poco conocimiento del proceso lo recomendable es aplicar:</p></div>
+          <div class='opciones'>
+            <div data-preg='p3' data-valor='false' class='respuesta'><p> <span>A</span> Cuestionario.</p></div>
+            <div data-preg='p3' data-valor='true' class='respuesta'><p> <span>B</span> Entrevista.</p></div>
+            <div data-preg='p3' data-valor='false' class='respuesta'><p> <span>C</span> Observación.</p></div>
+            <div data-preg='p3' data-valor='false' class='respuesta'><p> <span>D</span> Muestreo.</p></div>
+          </div>
+        </div>
+      </div><!-- /p3 -->
+
+      <div id='p4' class="opcion"><!-- p4 -->
+        <div class='wrap'>
+          <div class='question'><p> Cuando se requiera cuantificar los datos lo recomendable es aplicar:</p></div>
+          <div class='opciones'>
+            <div data-preg='p4' data-valor='true' class='respuesta'><p> <span>A</span> Cuestionario.</p></div>
+            <div data-preg='p4' data-valor='false' class='respuesta'><p> <span>B</span> Entrevista.</p></div>
+            <div data-preg='p4' data-valor='false' class='respuesta'><p> <span>C</span> Observación.</p></div>
+            <div data-preg='p4' data-valor='false' class='respuesta'><p> <span>D</span> Muestreo.</p></div>
+          </div>
+        </div>
+      </div><!-- /p4 -->
+
+      <div id='p5' class="opcion"><!-- p5 -->
+        <div class='wrap'>
+          <div class='question'><p> La información se refiere a:</p></div>
+          <div class='opciones'>
+            <div data-preg='p5' data-valor='false' class='respuesta'><p> <span>A</span> Cuando no me importan los datos.</p></div>
+            <div data-preg='p5' data-valor='true' class='respuesta'><p> <span>B</span> Se da sentido a los datos.</p></div>
+            <div data-preg='p5' data-valor='false' class='respuesta'><p> <span>C</span> Los datos no indican nada.</p></div>
+            <div data-preg='p5' data-valor='false' class='respuesta'><p> <span>D</span> Los datos son solo datos.</p></div>
+          </div>
+        </div>
+      </div><!-- /p5 -->
+
+      <!--  fin de cuestionario -->
+
+    </div><!-- fin preguntas -->
+
+    <!-- HISTORICO DE RESPUESTAS -->
+    <div id='cinta'>
+        <div class='c0 circulo normal'></div>
+        <div class='c1 circulo normal'></div>
+        <div class='c2 circulo normal'></div>
+        <div class='c3 circulo normal'></div>
+        <div class='c4 circulo normal'></div>
+    </div>
+
+    <!-- SONIDOS -->
+    <div class='sonidos'>
+      <audio preload>
+        <source src='audios/screen-change.mp3' type='audio/mp3'>
+        <source src='audios/screen-change.ogg' type='audio/ogg'>
+      </audio>
+      <audio preload>
+        <source src='audios/aplausos.mp3' type='audio/mp3'>
+        <source src='audios/aplausos.ogg' type='audio/ogg'>
+      </audio>
+      <audio preload>
+        <source src='audios/abucheo.mp3' type='audio/mp3'>
+        <source src='audios/abucheo.ogg' type='audio/ogg'>
+      </audio>
+      <audio preload>
+        <source src='audios/end-game-success.mp3' type='audio/mp3'>
+        <source src='audios/end-game-success.ogg' type='audio/ogg'>
+      </audio>
+      <audio preload>
+        <source src='audios/end-game-fail.mp3' type='audio/mp3'>
+        <source src='audios/end-game-fail.ogg' type='audio/ogg'>
+      </audio>
+    </div>
+
+    <div id="resultados">
+      <div class="estadistica">
+        <div class="resultados circle">
+            <strong>90<i>%</i></strong>
+        </div>
+        <div class="estadistica__puntaje">
+          <div class="estadistica__numero">0/8</div>
+          <div class="estadistica__flecha"></div>
+          <div class="estadistica__porcentaje">10%</div>
+        </div>
+        <div class="estadistica__mensaje">
+          <p>Ha tenido pocos aciertos. ¡Debe estudiar más!</p>
+        </div>
+        <div class="estadistica__botones">
+          <div class="bt__jugar-de-nuevo"></div>
+        </div>
+      </div><!-- /.estadistica -->
+    </div><!-- /#resultados -->
+
+  </div><!-- .contenedor -->
+
+  <form name="test" id="test"></form>
+
+  <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.js" type="text/javascript"></script>
+  <script src="js/toogle/toggles.min.js" type="text/javascript"></script>
+  <script src="js/plugins.js" type="text/javascript"></script>
+  <script src="js/cuestionario.js?v=3" charset="utf-8"></script>
+</body>
+</html>

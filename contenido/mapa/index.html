@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mapa de contenido</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+	background: #F5FCFF;
+	color: #333666;
+	background-color: #fffbee;
+}
+      section { text-align: center; margin: 0px 0; }
+      .panzoom-parent { border: 2px solid #333; }
+      .panzoom-parent .panzoom { border: 2px dashed #666; }
+      .buttons { 
+        background-color: #91C9F7;
+        border-radius: 12px;
+        margin: 0 auto 15px;
+        padding: 8px;
+        width: 300px;      
+      }
+      .zoom-in, .zoom-out, .reset {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #eee;
+        border:0px;
+        cursor: pointer;
+        /*color:#fff;*/
+      }
+      .zoom-in:hover, .zoom-out:hover, .reset:hover { 
+        background-color: #ddd;
+      }
+        
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.panzoom.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script>
+   
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="buttons">
+        <button class="zoom-in"><i class="fa fa-search-plus fa-lg"></i></button>
+        <button class="zoom-out"><i class="fa fa-search-minus fa-lg"></i></button>
+        <input type="range" class="zoom-range">
+        <button class="reset"><i class="fa fa-refresh fa-lg"></i></button>
+      </div>      
+      <div class="parent">
+        <div class="panzoom">
+          <img id='mapasvg' src="img/mapa.svg" width="1280" height="600">
+        </div>
+      </div>
+
+      <script>
+        (function() {
+          var $section = $('section').first();
+          $section.find('.panzoom').panzoom({
+            $zoomIn: $section.find(".zoom-in"),
+            $zoomOut: $section.find(".zoom-out"),
+            $zoomRange: $section.find(".zoom-range"),
+            $reset: $section.find(".reset")
+          });
+        })();
+      </script>
+    </section>
+  </body>
+</html>
